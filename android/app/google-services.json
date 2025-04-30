@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "135128060507",
+    "firebase_url": "https://flutter-crud-application-a295c-default-rtdb.firebaseio.com",
+    "project_id": "flutter-crud-application-a295c",
+    "storage_bucket": "flutter-crud-application-a295c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135128060507:android:6a8705bf18aef987d6257e",
+        "android_client_info": {
+          "package_name": "com.example.crudapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcopB6xYWcZtqiYnthtTDa_BF8hDBkT0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
