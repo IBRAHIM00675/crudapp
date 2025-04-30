@@ -14,6 +14,7 @@ class _HomepageState extends State<Homepage> {
   final _ageController = TextEditingController();
   final _emailController = TextEditingController();
 
+
   
 
   @override
@@ -111,7 +112,7 @@ class _HomepageState extends State<Homepage> {
         }
 
         final students = snapshot.data!.docs
-        .map((doc) => Students.fromJson(doc.data() as Map<String,dynamic>)).toList();
+        .map((doc) => Students.fromJson(doc.id,doc.data() as Map<String,dynamic>)).toList();
 
          return SingleChildScrollView(
         child:  Column(
@@ -127,6 +128,15 @@ class _HomepageState extends State<Homepage> {
                         Text('age: ${student.age}'),
                         Text('email: ${student.email}'),
                       ],
+                    ),
+                    trailing: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        IconButton(onPressed:(){}, icon: const Icon(Icons.edit,color: Color.fromARGB(255, 16, 19, 230),))
+                      ],
+
+
+
                     ),
                   ),
                 );
